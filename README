@@ -1,0 +1,42 @@
+Raven
+various experiments with the AVR Raven board
+info: http://christophe.vg/IT/Raven
+code: https://github.com/christophevg/raven
+
+---
+
+$ ./raven.py 
+*** dumping configuration/interface/endpoint info
+1
+	0,0
+		132
+		2
+		129
+*** step 1: TODO: figure out what this does ;-)
+    if a USBError 60: Operation timed out happens here, reset the stick
+2
+0x80
+*** step 2: setting channel=11 pan id= 0xBABE (TODO: figure out...)
+4
+0x80
+*** step 3: final step to turn on network (TODO: figure out...)
+2
+0x80
+*** network should be accessible now, turn on a mote
+*** received response on control(?) endpoint
+    data =  ['0x54', '0xc', '0x1b', '0x0', '0x1d', '0x81', '0x0', '0xa0', '0...
+*** remote address 0x001b joined.
+*** sending message:  Christophe was here ...
+33
+0x80
+*** reading temperature
+10
+0x80
+*** received response on control(?) endpoint
+    data =  ['0x53', '0xa', '0x0', '0x0', '0x1b', '0x0', '0xff', '0x2', '0x0...
+*** received 0x53: ack for txt msg ?
+9
+0x80
+*** reading temperature
+10
+0x80
